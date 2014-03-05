@@ -1,0 +1,20 @@
+HTTP/1.1 304 Not Modified
+Access-Control-Allow-Origin: *
+Date: Tue, 04 Mar 2014 22:07:38 GMT
+ETag: "231824906"
+Server: nginx/1.4.5
+X-Powered-By: Express
+Connection: keep-alive
+
+[
+    {
+        "token": "b5b901e8760164e134199bc2c3dd1d228acf2d98",
+        "expires_at": "2014-04-27T02:20:36.177Z",
+        "client": "spark"
+    },
+    {
+        "token": "ba54b6bb71a43b7612bdc7c972914604a078892b",
+        "expires_at": "2014-04-27T06:31:08.991Z",
+        "client": "spark"
+    }
+]

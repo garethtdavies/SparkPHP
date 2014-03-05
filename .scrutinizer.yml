@@ -1,0 +1,11 @@
+# .scrutinizer.yml
+imports:
+    - php
+
+tools:
+    php_code_coverage: true
+
+    php_code_sniffer: true
+
+before_commands:
+    - "composer install --prefer-source"

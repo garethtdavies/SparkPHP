@@ -1,0 +1,24 @@
+{
+    "name": "wensleydale/spark",
+    "description": "PHP library for the Spark.io API",
+    "keywords": ["spark"],
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gareth Davies",
+            "email": "hello@garethtdavies.com"
+        }
+    ],
+    "require": {
+        "guzzle/guzzle": "~3.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wensleydale\\": "src/"
+        }
+    }
+}

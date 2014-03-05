@@ -1,0 +1,19 @@
+HTTP/1.1 304 Not Modified
+Access-Control-Allow-Origin: *
+Date: Wed, 05 Mar 2014 19:56:10 GMT
+ETag: "849708141"
+Server: nginx/1.4.5
+X-Powered-By: Express
+Connection: keep-alive
+
+{
+  "cmd": "VarReturn",
+  "name": "temperature",
+  "result": "25.00",
+  "coreInfo": {
+    "last_app": "",
+    "last_heard": "2014-03-05T22:56:43.230Z",
+    "connected": true,
+    "deviceID": "0123456789abcdef01234567"
+  }
+}

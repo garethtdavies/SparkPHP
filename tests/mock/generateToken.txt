@@ -1,0 +1,13 @@
+HTTP/1.1 304 Not Modified
+Access-Control-Allow-Origin: *
+Date: Wed, 05 Mar 2014 19:56:10 GMT
+ETag: "849708141"
+Server: nginx/1.4.5
+X-Powered-By: Express
+Connection: keep-alive
+
+{
+    "access_token": "254406f79c1999af65a7df4388971354f85cfee9",
+    "token_type": "bearer",
+    "expires_in": 7776000
+}

@@ -1,0 +1,16 @@
+HTTP/1.1 304 Not Modified
+Access-Control-Allow-Origin: *
+Date: Tue, 04 Mar 2014 22:07:38 GMT
+ETag: "231824906"
+Server: nginx/1.4.5
+X-Powered-By: Express
+Connection: keep-alive
+
+[
+  {
+    "id": "0123456789abcdef01234567",
+    "name": "Wensleydale",
+    "last_app": null,
+    "connected": false
+  }
+]
