@@ -169,10 +169,13 @@ class Spark implements SparkInterface
     public function flashDevice()
     {
         try {
+
             $request = $this->client->put(
                 "devices/{$this->deviceId}",
                 null,
-                "file=@{$this->file}"
+                array(
+                    'file' => "@{$this->file}"
+                )
             )
                 ->send();
 

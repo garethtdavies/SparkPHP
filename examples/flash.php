@@ -9,19 +9,22 @@ use Wensleydale\SparkException;
 require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 //Get your access token from either the Spark Build site or make a token request
-$accessToken = 'your_access_token';
+$accessToken = 'bfd80dddeb84331baa10bb65edcf65e47af27a0e';
 
 //Create a new Spark instance
 $core = SparkCore::make($accessToken);
 
-$core->setFile('../examples/application.cpp');
+$core->setDeviceId('51ff71065067545756280187');
+$core->setFile($_SERVER['DOCUMENT_ROOT'] . '/examples/application.cpp');
 
-try{
+try {
     $result = $core->flashDevice();
-    echo $result->ok; //true or false - more info for failed updates in $result->errors
-}
-catch(SparkException $e)
-{
+    if ($result->ok) {
+        echo 'Core flashed successfully';
+    } else {
+        echo 'There was an error flashing the core. There is more information regarding the error by examining $result->errors';
+    }
+} catch (SparkException $e) {
     echo 'There was an error flashing the core';
 }
 

@@ -60,7 +60,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $this->setMockResponse($this->client, 'flashDevice.txt');
 
         $core = new \Wensleydale\Spark($this->client);
-        $core->setFile('application.cpp');
+        $core->setFile(__DIR__ . '/mock/mock.cpp');
         $result = $core->flashDevice();
 
         $this->assertTrue($result->ok);
@@ -72,6 +72,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $this->plugin->addResponse(new Guzzle\Http\Message\Response('400'));
 
         $core = new \Wensleydale\Spark($this->client);
+        $core->setFile(__DIR__ . '/mock/mock.cpp');
         $core->flashDevice();
     }
 
