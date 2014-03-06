@@ -12,24 +12,31 @@ Makes it incredibly easy to get up and running using the default Tinker firmware
 
 More detailed examples will follow shortly but basic operations may be found in the examples directory.
 
-###Turning on a LED using default tinker firmware
+### Turning on a LED using default tinker firmware
     $core = SparkCore::make($accessToken);
     $core->setPin('D7');
     $core->setValue('HIGH');
     $core->digitalWrite(); //Will turn on the inbuilt LED
 
-###Installing
+### Installing via Composer
 
-The simplest way to get up and running is through composer.
+The recommended way to install the library is through [Composer](http://getcomposer.org).
 
-Ensure that your composer autoload file is being required by your project e.g. require '/vendor/autoload.php' and use either the fully qualified namespace
-\Wensleydale\SparkCore::make($accessToken) or use the \Wensleydale namespace.
+```bash
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
 
-###Exceptions
+# Add Spark as a dependency
+php composer.phar require wensleydale/spark:dev-master
+```
 
-If there are any issues during the API request a SparkException will be thrown
+After installing, you need to require Composer's autoloader:
 
-###Tokens
+```php
+require 'vendor/autoload.php';
+```
+
+### Managing Tokens
 
 You may list all your tokens, generate a token or delete a token
 
@@ -38,6 +45,14 @@ You may list all your tokens, generate a token or delete a token
     $tokenInstance->setPassword('your_spark_password');
     $listTokens = $tokenInstance->listTokens();
 
-##Tests
+### Exceptions
 
-There is a test suite that uses mocked responses from the Spark API.
+If there are any issues during the API request a SparkException or SparkTokenException will be thrown which can be caught
+and managed according to your application needs.
+
+## Unit Tests
+
+This library uses PHPUnit for unit testing. In order to run the unit tests, you'll first need
+to install the dependencies of the project using Composer: `php composer.phar install --dev`.
+You can then run the tests using `vendor/bin/phpunit`. The library comes with a set of mocked responses
+from the Spark API
