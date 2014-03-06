@@ -1,4 +1,4 @@
-PHPSpark
+SparkPHP
 ========
 
 [![Build Status](https://travis-ci.org/garethtdavies/SparkPHP.png?branch=master)](https://travis-ci.org/garethtdavies/SparkPHP)
