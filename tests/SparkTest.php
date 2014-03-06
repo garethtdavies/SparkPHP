@@ -22,7 +22,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->devices();
 
-        $this->assertEquals($result[0]->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result[0]->id);
     }
 
     public function test_devices_throws_an_exception()
@@ -42,7 +42,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->deviceInfo();
 
-        $this->assertEquals($result->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result->id);
     }
 
     public function test_device_info_throws_spark_exception()
@@ -84,7 +84,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->digitalWrite();
 
-        $this->assertEquals($result->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result->id);
     }
 
     public function test_digital_write_throws_spark_exception()
@@ -104,7 +104,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->digitalRead();
 
-        $this->assertEquals($result->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result->id);
     }
 
     public function test_digital_read_throws_spark_exception()
@@ -124,7 +124,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->analogWrite();
 
-        $this->assertEquals($result->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result->id);
     }
 
     public function test_analog_write_throws_spark_exception()
@@ -144,7 +144,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->analogRead();
 
-        $this->assertEquals($result->id, '0123456789abcdef01234567');
+        $this->assertEquals('0123456789abcdef01234567', $result->id);
     }
 
     public function test_analog_read_throws_spark_exception()
@@ -164,7 +164,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->run();
 
-        $this->assertEquals($result->return_value, '42');
+        $this->assertEquals('42', $result->return_value);
     }
 
     public function test_run_throws_spark_exception()
@@ -184,7 +184,7 @@ class SparkTest extends Guzzle\Tests\GuzzleTestCase
         $core = new \Wensleydale\Spark($this->client);
         $result = $core->read();
 
-        $this->assertEquals($result->cmd, 'VarReturn');
+        $this->assertEquals('VarReturn', $result->cmd);
     }
 
     public function test_read_throws_spark_exception()

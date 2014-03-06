@@ -22,7 +22,7 @@ class SparkTokenTest extends Guzzle\Tests\GuzzleTestCase
         $token = new \Wensleydale\SparkToken($this->client);
         $result = $token->listTokens();
 
-        $this->assertEquals($result[0]->token, 'b5b901e8760164e134199bc2c3dd1d228acf2d98');
+        $this->assertEquals('b5b901e8760164e134199bc2c3dd1d228acf2d98', $result[0]->token);
     }
 
     public function test_list_tokens_throws_sparktoken_exception()
@@ -42,7 +42,7 @@ class SparkTokenTest extends Guzzle\Tests\GuzzleTestCase
         $token = new \Wensleydale\SparkToken($this->client);
         $result = $token->generateToken();
 
-        $this->assertEquals($result->access_token, '254406f79c1999af65a7df4388971354f85cfee9');
+        $this->assertEquals('254406f79c1999af65a7df4388971354f85cfee9', $result->access_token);
     }
 
     public function test_generate_tokens_throws_sparktoken_exception()
