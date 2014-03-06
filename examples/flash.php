@@ -9,7 +9,7 @@ use Wensleydale\SparkException;
 require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 //Get your access token from either the Spark Build site or make a token request
-$accessToken = 'bfd80dddeb84331baa10bb65edcf65e47af27a0e';
+$accessToken = 'your_access_token';
 
 //Create a new Spark instance
 $core = SparkCore::make($accessToken);

@@ -8,13 +8,11 @@ PHPSpark
 
 PHP library for the [Spark.io API](http://docs.spark.io/#/api).
 
-Makes it incredibly easy to get up and running using the Tinker firmware or any custom function/variable that is exposed by your core firmware.
+Makes it incredibly easy to get up and running using the default Tinker firmware or any custom function/variable that is exposed by your core firmware. You can also use the library to access/generate tokens and flash firmware to your core.
 
-You can also use the library to access/generate tokens and flash firmware to your core.
+More detailed examples will follow shortly but basic operations may be found in the examples directory.
 
-Some more detailed examples for example using the Twitter SDK may be found [here](http://www.gareth.io)
-
-###Turning on a LED on digital pin 7 using default tinker firmware
+###Turning on a LED using default tinker firmware
     $core = SparkCore::make($accessToken);
     $core->setPin('D7');
     $core->setValue('HIGH');
