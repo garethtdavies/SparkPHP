@@ -50,7 +50,7 @@ You may list all your tokens, generate a token or delete a token
 If there are any issues during the API request a SparkException or SparkTokenException will be thrown which can be caught
 and managed according to your application needs.
 
-## Unit Tests
+### Unit Tests
 
 This library uses PHPUnit for unit testing. In order to run the unit tests, you'll first need
 to install the dependencies of the project using Composer: `php composer.phar install --dev`.
