@@ -24,7 +24,7 @@ $core->setValue('HIGH');
 
 try {
     $result = $core->digitalWrite();
-    echo $result->result; // 1 if success -1 if fails
+    echo $result->return_value; // 1 if success -1 if fails
 } catch (SparkException $e) {
     echo "There was an issue with the digital write method";
 }
@@ -34,7 +34,7 @@ $core->setPin('D7');
 
 try {
     $result = $core->digitalRead();
-    echo $result->result; // 1 if HIGH 0 if LOW -1 if fails
+    echo $result->return_value; // 1 if HIGH 0 if LOW -1 if fails
 } catch (SparkException $e) {
     echo "There was an issue with the digital read method";
 }
@@ -45,7 +45,7 @@ $core->setValue('255');
 
 try {
     $core->analogWrite();
-    echo $result->result; // 1 if success -1 if fails
+    echo $result->return_value; // 1 if success -1 if fails
 } catch (SparkException $e) {
     echo "There was an issue with the analog write method";
 }
@@ -55,7 +55,7 @@ $core->setPin('A0');
 
 try {
     $result = $core->analogRead();
-    echo $result->result; // Reading between 0 and 4095 and -1 if fails
+    echo $result->return_value; // Reading between 0 and 4095 and -1 if fails
 } catch (SparkException $e) {
     echo "There was an issue with the analog read method";
 }
