@@ -4,7 +4,6 @@ SparkPHP
 [![Build Status](https://travis-ci.org/garethtdavies/SparkPHP.png?branch=master)](https://travis-ci.org/garethtdavies/SparkPHP)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/garethtdavies/SparkPHP/badges/quality-score.png?s=f2f7da63bff03c32a86e3a1f6cdcea7c6c14b4e2)](https://scrutinizer-ci.com/g/garethtdavies/SparkPHP/)
 [![Code Coverage](https://scrutinizer-ci.com/g/garethtdavies/SparkPHP/badges/coverage.png?s=0948daafb60a4ef0eeea320d9d158064c487748c)](https://scrutinizer-ci.com/g/garethtdavies/SparkPHP/)
-[![Dependency Status](https://www.versioneye.com/user/projects/53235c43ec137554460000d4/badge.png)](https://www.versioneye.com/user/projects/53235c43ec137554460000d4)
 
 PHP library for the [Spark.io API](http://docs.spark.io/#/api).
 
